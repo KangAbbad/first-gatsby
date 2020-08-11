@@ -1,0 +1,67 @@
+.container {
+  background-color: gray;
+  background-image: url('https://images.unsplash.com/photo-1520683197291-667c5475ed63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.avatar {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  overflow: hidden;
+}
+
+.username {
+  color: #FFFFFF;
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+
+.bio {
+  color: #FFFFFF;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.list {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.list .ant-list-item {
+  border: 0;
+}
+
+.button-link {
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.button-link > span {
+  color: #FFFFFF;
+}
+
+.button-link:hover, .button-link:focus, .button-link:active {
+  border: 1px solid #40a9ff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .bio {
+    width: 500px;
+  }
+
+  .list {
+    width: 50%;
+  }
+}

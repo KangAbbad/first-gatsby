@@ -14,9 +14,9 @@ module.exports = {
         short_name: 'Learn GatsbyJS',
         start_url: '/',
         background_color: '#f7f0eb',
-        theme_color: '#007900',
-        display: `minimal-ui`,
-        icon: 'src/images/favicon.png',
+        theme_color: '#1C2329',
+        display: `standalone`,
+        icon: 'src/images/pwa_logo.svg',
       },
     },
     'gatsby-plugin-offline'
