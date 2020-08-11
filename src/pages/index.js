@@ -1,6 +1,7 @@
 import React from "react"
 import 'antd/dist/antd.css'
 import './style.css'
+
 import { Layout, Typography, List, Button } from "antd"
 import Avatar from '../images/a_logo.jpg'
 
@@ -46,7 +47,7 @@ const Home = () => {
               onClick={() => {
                 setTimeout(() => {
                   window.open(item.url)
-                }, 500);
+                }, 500)
               }}
             >
               {item.label}
