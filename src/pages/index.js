@@ -1,10 +1,11 @@
-import React from "react"
+import React from 'react'
 import 'antd/dist/antd.css'
 import './style.css'
 
-import { Layout, Typography, List, Button } from "antd"
+import { Layout, Typography, List, Button } from 'antd'
 import Avatar from '../images/a_logo.jpg'
 
+const { Content } = Layout
 const { Paragraph } = Typography
 
 const dataLink = [
@@ -29,32 +30,34 @@ const dataLink = [
 const Home = () => {
   return (
     <Layout className='container'>
-      <img src={Avatar} alt='my avatar' className='avatar' />
-      <Paragraph className='username'>
-        @kangabbad
-      </Paragraph>
-      <Paragraph className='bio'>
-        Javascript Enthusiast | Frontend Developer
-      </Paragraph>
-      <List
-        dataSource={dataLink}
-        className='list'
-        renderItem={item => (
-          <List.Item>
-            <Button
-              block
-              className='button-link'
-              onClick={() => {
-                setTimeout(() => {
-                  window.open(item.url)
-                }, 500)
-              }}
-            >
-              {item.label}
-            </Button>
-          </List.Item>
-        )}
-      />
+      <Content>
+        <img src={Avatar} alt='my avatar' className='avatar' />
+        <Paragraph className='username'>
+          @kangabbad
+        </Paragraph>
+        <Paragraph className='bio'>
+          Javascript Enthusiast | Frontend Developer
+        </Paragraph>
+        <List
+          dataSource={dataLink}
+          className='list'
+          renderItem={item => (
+            <List.Item>
+              <Button
+                block
+                className='button-link'
+                onClick={() => {
+                  setTimeout(() => {
+                    window.open(item.url)
+                  }, 500)
+                }}
+              >
+                {item.label}
+              </Button>
+            </List.Item>
+          )}
+        />
+      </Content>
     </Layout>
   )
 }
