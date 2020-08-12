@@ -4,7 +4,7 @@ import 'antd/dist/antd.css'
 import './style.css'
 
 import { Layout, Typography, List, Button } from 'antd'
-import Avatar from '../images/a_logo.jpg'
+import Avatar from '../images/avatar.webp'
 
 const { Content } = Layout
 const { Paragraph } = Typography
@@ -42,7 +42,14 @@ const Home = () => {
         <link rel='canonical' href='https://learn-gatsby.vercel.app/' />
       </Helmet>
       <Content>
-        <img src={Avatar} alt='my avatar' className='avatar' />
+        <img
+          src={Avatar}
+          className='avatar'
+          height='120'
+          width='120'
+          intrinsicsize="120x120"
+          alt='my avatar'
+        />
         <Paragraph className='username'>
           @kangabbad
         </Paragraph>
