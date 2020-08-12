@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import 'antd/dist/antd.css'
 import './style.css'
 
@@ -30,6 +31,11 @@ const dataLink = [
 const Home = () => {
   return (
     <Layout className='container'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Learn GatsbyJS</title>
+        <link rel='canonical' href='https://learn-gatsby.vercel.app/' />
+      </Helmet>
       <Content>
         <img src={Avatar} alt='my avatar' className='avatar' />
         <Paragraph className='username'>

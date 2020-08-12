@@ -19,6 +19,7 @@ module.exports = {
         icon: 'src/images/pwa_logo.svg',
       },
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet'
   ],
 }
