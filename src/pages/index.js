@@ -33,6 +33,7 @@ const Home = () => {
     <Layout className='container'>
       <Helmet>
         <meta charSet='utf-8' />
+        <meta name='description' content='Building fake Linktr.ee with GatsbyJS' />
         <title>Learn GatsbyJS</title>
         <link rel='canonical' href='https://learn-gatsby.vercel.app/' />
       </Helmet>
