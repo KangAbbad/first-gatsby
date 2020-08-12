@@ -31,7 +31,7 @@ const dataLink = [
 const Home = () => {
   return (
     <Layout className='container'>
-      <Helmet>
+      <Helmet defer={false} title='Learn GatsbyJS'>
         <meta charSet='utf-8' />
         <meta name='description' content='Building fake Linktr.ee with GatsbyJS' />
         <title>Learn GatsbyJS</title>
