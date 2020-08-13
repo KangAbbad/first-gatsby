@@ -40,7 +40,6 @@ const Home = () => {
         <meta charSet='utf-8' />
         <meta name='description' content='Building fake Linktr.ee with GatsbyJS' />
         <title>Learn GatsbyJS</title>
-        <link rel='canonical' href='https://learn-gatsby.vercel.app/' />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' />
       </Helmet>
       <Content>
