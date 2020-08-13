@@ -4,7 +4,8 @@ import 'antd/dist/antd.css'
 import './style.css'
 
 import { Layout, Typography, List, Button } from 'antd'
-import Avatar from '../images/avatar.webp'
+import AvatarWebp from '../images/avatar.webp'
+import AvatarPng from '../images/avatar.png'
 
 const { Content } = Layout
 const { Paragraph } = Typography
@@ -40,15 +41,16 @@ const Home = () => {
         <meta name='description' content='Building fake Linktr.ee with GatsbyJS' />
         <title>Learn GatsbyJS</title>
         <link rel='canonical' href='https://learn-gatsby.vercel.app/' />
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' />
       </Helmet>
       <Content>
-        <img
-          src={Avatar}
+        <ImgWithFallback
+          src={AvatarWebp}
+          fallback={AvatarPng}
+          alt="My Avatar"
           className='avatar'
           height='120'
           width='120'
-          intrinsicsize="120x120"
-          alt='my avatar'
         />
         <Paragraph className='username'>
           @kangabbad
@@ -81,3 +83,17 @@ const Home = () => {
 }
 
 export default Home
+
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = 'image/webp',
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} alt={delegated.alt} {...delegated} />
+    </picture>
+  );
+};
